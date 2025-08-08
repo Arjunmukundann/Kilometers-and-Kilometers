@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐓 Kilometers?huhhhhhs 🐌</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">🌟 Distance Calculator 🌟</h1>
+            <p class="subtitle">Discover distances in the most ridiculous units possible!</p>
+        </header>
+
+        <div class="main-content">
+            <div class="controls-section">
+                <div class="location-inputs">
+                    <div class="input-group">
+                        <label for="from-location">🏠 From:</label>
+                        <input type="text" id="from-location" placeholder="Enter starting location..." />
+                        <div class="suggestions" id="from-suggestions"></div>
+                    </div>
+                    <div class="input-group">
+                        <label for="to-location">🎯 To:</label>
+                        <input type="text" id="to-location" placeholder="Enter destination..." />
+                        <div class="suggestions" id="to-suggestions"></div>
+                    </div>
+                </div>
+
+                <div class="travel-mode-section">
+                    <label for="travel-mode">🚀 Choose your  travel mode:</label>
+                    <select id="travel-mode">
+                        <option value="chicken">🐓 Chicken Steps</option>
+                        <option value="snail">🐌 Snail Wiggles</option>
+                        <option value="rat">🐀 Tail Flicks</option>
+                        <option value="paddle">🚣 Paddle Strokes</option>
+                        <option value="flying">🪽 Wing Flaps</option>
+                        <option value="underground">🦦 Mole Digs</option>
+                    </select>
+                </div>
+
+                <button id="calculate-btn" class="calculate-button">
+                    ✨ Calculate  Distance! ✨
+                </button>
+
+                <div class="loading-container" id="loading-container" style="display: none;">
+                    <div class="loading-spinner"></div>
+                    <p>Calculating your journey...</p>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <div id="map"></div>
+                <div class="map-placeholder" id="map-placeholder">
+                    <div class="placeholder-content">
+                        <div class="placeholder-animation">
+                            <div class="bounce-dot"></div>
+                            <div class="bounce-dot"></div>
+                            <div class="bounce-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-section" id="results-section" style="display: none;">
+            <div class="result-card">
+                <h2 class="result-title"> Your Journey </h2>
+                <div class="distance-display" id="distance-display"></div>
+                <div class="fun-fact" id="fun-fact"></div>
+                <div class="journey-stats" id="journey-stats"></div>
+            </div>
+        </div>
+
+        <div class="animations-container">
+            <div class="floating-emoji" id="floating-emoji">🐓</div>
+        </div>
+
+        <div class="api-notice">
+            <p>💡 <strong>Demo Mode:</strong> Using mock data for demonstration. In production, this would use Google Maps API.</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
