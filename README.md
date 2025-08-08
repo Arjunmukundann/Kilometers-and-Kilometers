@@ -64,7 +64,13 @@ cd Kilometers-and-Kilometers
 "Kilometers and Kilometers" is a quirky travel distance calculator that converts conventional distances into hilarious and imaginative units based on the mode of travel you choose — like chicken steps, snail rides, paddle strokes, and more. It’s designed to add a fun twist to your usual route planning by giving you whimsical, alternative distance measures instead of boring kilometers.
 
 #### Screenshots 
-Screenshots are added to the Screenshots folder.
+
+![screenshot1]([[image-url](Arjunmukundann/Kilometers-and-Kilometers/blob/main/Screenshots/Recording%202025-08-08%20154417.mp4)](https://github.com/Arjunmukundann/Kilometers-and-Kilometers/blob/main/Screenshots/Screenshot%202025-08-08%20153731.png))
+
+![screenshot2]([image-url](https://github.com/Arjunmukundann/Kilometers-and-Kilometers/blob/main/Screenshots/Screenshot%202025-08-08%20153653.png))
+
+![screenshot3]([image-url](https://github.com/Arjunmukundann/Kilometers-and-Kilometers/blob/main/Screenshots/Screenshot%202025-08-08%20153804.png))
+
 ### Project Demo
 #### Video
 videos are added to the Screenshots folder.
